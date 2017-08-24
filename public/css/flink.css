@@ -1,0 +1,37 @@
+html, body {
+    overflow-x: hidden;
+    height: 100%;
+    margin: 0;
+}
+.empty{
+    height: 5% !important;
+}
+.container {
+    min-height: calc(100vh - 50px);
+}
+.error{
+    color: red;
+}
+.status{
+    color:#173282;
+}
+.footer {
+    padding-top: 15px;
+    padding-left: 10px;
+    height: 50px;
+}
+.full-width {
+    margin: 0 -9999rem;
+    padding: 0.25rem 9999rem;
+}
+
+.green-bg{
+    background: rgba(30, 118, 71, 1) !important;
+    border-color: rgba(30, 118, 71, 1) !important;
+}
+.white-fg{
+    color: white;
+}
+.header{
+    padding-top:24px;
+}

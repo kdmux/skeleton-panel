@@ -1,0 +1,31 @@
+extends layout
+
+block content
+  .row
+    .four.columns
+      h4 Welcome!
+      p To further progress you have to log in.
+  .row
+    - if (messages.error)
+      .row
+        .twelve.columns
+          span.error= messages.error
+      .row
+        | &nbsp;
+    - if (messages.status)
+      .row
+        .twelve.columns
+          span.status= messages.status
+      .row
+        | &nbsp;
+    form(action='login', method='post')
+      .row
+        .six.columns
+          label(for='username') Username
+          input#username.u-full-width(type='text',name='username')
+        .six.columns
+          label(for='password') Password
+          input#password.u-full-width(type='password',name='password')
+      .row
+        .four.columns
+          input.button-primary.green-bg(type='submit', value='Login')

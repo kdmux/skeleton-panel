@@ -1,0 +1,14 @@
+extends layout
+block content
+   .row
+      .four.columns
+         h4 Welcome
+         h6 Logged in as #{username}
+      .row
+         | &nbsp;
+   form(action='../logout', method='get')
+      .row
+         .four.columns
+            input.button-primary.green-bg(type='submit', value='Logout')
+
+
